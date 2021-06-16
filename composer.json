@@ -1,17 +1,32 @@
 {
-    "name": "burnbright/silverstripe-importexport",
-    "description": "An upgrade to SilverStripe's bulk loading and exporting",
-    "type": "silverstripe-module",
+    "name": "plasticstudio/silverstripe-importexport",
+    "description": "An upgrade to SilverStripe's bulk loading and exporting (forked from burnbright/silverstripe-importexport)",
+    "type": "silverstripe-vendormodule",
+    "homepage": "http://github.com/plasticstudio/silverstripe-importexport",
     "license": "MIT",
-    "keywords": ["csv","import","bulkload","export","data"],
+    "keywords": [
+        "silverstripe",
+        "silverstripe 4",
+        "csv bulkloader",
+        "csv",
+        "import",
+        "bulkload",
+        "export",
+        "data"]
+        ,
     "authors": [
         {
             "name": "Jeremy Shipman",
             "email": "jeremy@burnbright.net"
+        },
+        {
+            "name": "Jeremy Cole",
+            "email": "jeremy@psdigital.co.nz"
         }
     ],
     "require": {
-        "silverstripe/framework": "~3.1",
+        "silverstripe/cms": "^4.0",
+        "silverstripe/framework": "^4.0",
         "goodby/csv": "1.2.x"
     },
      "extra": {
