@@ -1,9 +1,7 @@
 {
-    "name": "plasticstudio/silverstripe-importexport",
+    "name": "burnbright/silverstripe-importexport",
     "description": "An upgrade to SilverStripe's bulk loading and exporting (forked from burnbright/silverstripe-importexport)",
     "type": "silverstripe-vendormodule",
-    "homepage": "http://github.com/plasticstudio/silverstripe-importexport",
-    "license": "MIT",
     "keywords": [
         "silverstripe",
         "silverstripe 4",
@@ -12,8 +10,8 @@
         "import",
         "bulkload",
         "export",
-        "data"]
-        ,
+        "data"
+    ],
     "authors": [
         {
             "name": "Jeremy Shipman",
