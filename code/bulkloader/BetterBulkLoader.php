@@ -1,4 +1,12 @@
 <?php
+
+namespace BurnBright\ImportExport\BulkLoader;
+
+use SilverStripe\Dev\BulkLoader;
+use SilverStripe\ORM\DataObject;
+use SilverStripe\ORM\ValidationException;
+use BurnBright\ImportExport\BulkLoader\BetterBulkLoader_Result;
+use BurnBright\ImportExport\BulkLoader\Sources\BulkLoaderSource;
 /**
  * The bulk loader allows large-scale uploads to SilverStripe via the ORM.
  *
@@ -9,7 +17,7 @@
  *
  * Failed record imports will be marked as skipped.
  */
-class BetterBulkLoader extends BulkLoader
+abstract class BetterBulkLoader extends BulkLoader
 {
 
     /**

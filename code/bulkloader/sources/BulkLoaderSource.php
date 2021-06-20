@@ -1,5 +1,9 @@
 <?php
 
+namespace BurnBright\ImportExport\BulkLoader\Sources;
+
+use IteratorAggregate;
+
 /**
  * An abstract source to bulk load records from.
  * Provides an iterator for retrieving records from.

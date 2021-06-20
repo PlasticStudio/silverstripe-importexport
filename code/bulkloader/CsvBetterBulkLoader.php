@@ -1,10 +1,15 @@
 <?php
 
+namespace BurnBright\ImportExport\BulkLoader;
+
+use BurnBright\ImportExport\BulkLoader\BetterBulkLoader;
+use BurnBright\ImportExport\BulkLoader\Sources\CsvBulkLoaderSource;
+
 /**
  * Backwards copatible CsvBulkLoader
  * Almost api equivelant to CSVBulkLoader
  */
-class CsvBetterBulkLoader extends BetterBulkLoader
+abstract class CsvBetterBulkLoader extends BetterBulkLoader
 {
 
     public $delimiter = ',';
