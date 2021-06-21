@@ -9,7 +9,7 @@ use BurnBright\ImportExport\BulkLoader\Sources\CsvBulkLoaderSource;
  * Backwards copatible CsvBulkLoader
  * Almost api equivelant to CSVBulkLoader
  */
-abstract class CsvBetterBulkLoader extends BetterBulkLoader
+class CsvBetterBulkLoader extends BetterBulkLoader
 {
 
     public $delimiter = ',';

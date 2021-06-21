@@ -7,6 +7,7 @@ use SilverStripe\ORM\DataObject;
 use SilverStripe\ORM\ValidationException;
 use BurnBright\ImportExport\BulkLoader\BetterBulkLoader_Result;
 use BurnBright\ImportExport\BulkLoader\Sources\BulkLoaderSource;
+
 /**
  * The bulk loader allows large-scale uploads to SilverStripe via the ORM.
  *
@@ -17,7 +18,7 @@ use BurnBright\ImportExport\BulkLoader\Sources\BulkLoaderSource;
  *
  * Failed record imports will be marked as skipped.
  */
-abstract class BetterBulkLoader extends BulkLoader
+class BetterBulkLoader extends BulkLoader
 {
 
     /**
@@ -150,6 +151,21 @@ abstract class BetterBulkLoader extends BulkLoader
         $class = $this->objectClass;
         return $class::get();
     }
+
+    /**
+	 * Preview a file import (don't write anything to the database).
+	 * Useful to analyze the input and give the users a chance to influence
+	 * it through a UI.
+	 *
+	 * @todo Implement preview()
+	 *
+	 * @param string $filepath Absolute path to the file we're importing
+	 * @return array See {@link self::processAll()}
+	 */
+	public function preview($filepath) {
+		user_error("BulkLoader::preview(): Not implemented", E_USER_ERROR);
+	}
+
 
     /**
      * Import all records from the source.

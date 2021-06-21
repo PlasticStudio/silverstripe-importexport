@@ -9,7 +9,7 @@ use BurnBright\ImportExport\BulkLoader\BetterBulkLoader;
 /**
  * Peforms bulk loading, but works with a given DataList.
  */
-abstract class ListBulkLoader extends BetterBulkLoader
+class ListBulkLoader extends BetterBulkLoader
 {
 
     /**
