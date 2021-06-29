@@ -142,13 +142,13 @@ class GridFieldImporter implements GridField_HTMLProvider, GridField_URLHandler
                 $gridField->Name."_ImportUploadField", 'Upload CSV'
             )
             ->setForm($gridField->getForm())
-            ->setConfig('url', $gridField->Link('importer/upload'))
-            ->setConfig('edit_url', $gridField->Link('importer/import'))
-            ->setConfig('allowedMaxFileNumber', 1)
-            ->setConfig('changeDetection', false)
-            ->setConfig('canPreviewFolder', false)
-            ->setConfig('canAttachExisting', false)
-            ->setConfig('overwriteWarning', false)
+            ->setAttribute('url', $gridField->Link('importer/upload'))
+            ->setAttribute('edit_url', $gridField->Link('importer/import'))
+            ->setAttribute('allowedMaxFileNumber', 1)
+            ->setAttribute('changeDetection', false)
+            ->setAttribute('canPreviewFolder', false)
+            ->setAttribute('canAttachExisting', false)
+            ->setAttribute('overwriteWarning', false)
             ->setAllowedExtensions(array('csv'))
             ->setFolderName('csvImports') //TODO: don't store temp CSV in assets
             ->addExtraClass("import-upload-csv-field");
