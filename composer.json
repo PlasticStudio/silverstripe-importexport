@@ -23,11 +23,11 @@
         }
     ],
     "require": {
-        "silverstripe/cms": "^4.0",
-        "silverstripe/framework": "^4.0",
+        "silverstripe/cms": "^4 || ^5",
+        "silverstripe/framework": "^4 || ^5",
         "goodby/csv": "1.2.x"
     },
-     "extra": {
+    "extra": {
         "installer-name": "importexport",
         "expose": [
             "javascript"
